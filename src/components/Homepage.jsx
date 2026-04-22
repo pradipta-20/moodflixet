@@ -136,8 +136,10 @@ const Homepage = () => {
 
       <Login isOpen={isLoginOpen} onClose={() => setIsLoginOpen(false)} />
     </div>
+    
   );
 };
+
 
 // --- STYLES ---
 const redOrbStyle = { position: 'absolute', top: '-10%', left: '-10%', width: '40%', height: '40%', background: '#FF2E55', filter: 'blur(120px)', opacity: 0.15, zIndex: 0 };
@@ -159,4 +161,69 @@ const placeholderTextStyle = { color: '#444', fontSize: '18px', fontStyle: 'ital
 const cardStyle = { background: '#141414', padding: '30px', borderRadius: '16px', border: '1px solid #262626', cursor: 'pointer' };
 const cardHeaderStyle = { display: 'flex', justifyContent: 'space-between', marginBottom: '15px' };
 
+const footerStyle = { 
+  backgroundColor: "#050505", 
+  borderTop: "1px solid #222", 
+  padding: '80px 60px 40px 60px', // Add this
+  position: 'relative',          // Add this
+  zIndex: 2                      // Add this
+};
+
+const footerContainerStyle = {
+  display: 'flex', 
+  justifyContent: 'space-between', 
+  alignItems: 'flex-start', 
+  flexWrap: 'wrap', 
+  gap: '40px'
+};
+
+const footerBrandSection = {
+  display: 'flex',
+  flexDirection: 'column'
+};
+
+const footerDescriptionStyle = { 
+  color: '#666', 
+  fontSize: '14px', 
+  marginTop: '20px', 
+  maxWidth: '300px', 
+  lineHeight: '1.6' 
+};
+
+const footerLinkGridStyle = { 
+  display: 'flex', 
+  gap: '80px', 
+  flexWrap: 'wrap' 
+};
+
+const footerColumnStyle = { 
+  display: 'flex', 
+  flexDirection: 'column', 
+  gap: '12px' 
+};
+
+const footerHeaderStyle = { 
+  color: '#fff', 
+  fontSize: '13px', 
+  fontWeight: 700, 
+  textTransform: 'uppercase', 
+  marginBottom: '10px', 
+  letterSpacing: '1.5px' 
+};
+
+const footerBottomStyle = { 
+  marginTop: '80px', 
+  paddingTop: '30px', 
+  borderTop: '1px solid #1A1A1A', 
+  display: 'flex', 
+  justifyContent: 'space-between', 
+  alignItems: 'center' 
+};
+
+const footerCopyrightStyle = { 
+  color: '#444', 
+  fontSize: '11px', 
+  fontWeight: 600, 
+  letterSpacing: '1px' 
+};
 export default Homepage;
